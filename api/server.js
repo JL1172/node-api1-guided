@@ -102,16 +102,3 @@ server.delete("/api/dogs/:id",async(req,res)=> {
 
 module.exports = server //! how to flesh out express http server
 
-// server.get("/api/dogs/:id",async(req,res)=> {
-//     try {
-//         const {id} = req.params;
-//         const dogs = await Dog.findById(id)
-//         if (!dogs) {
-//             res.status(404).json({message : `no dog with id ${id}`});
-//         } else {
-//             res.status(200).json(dogs); 
-//         }
-//     } catch {
-//         res.status(500).json({message : `Error fetching dog ${req.params.id} : ${err.message}`});
-//     }
-// })
